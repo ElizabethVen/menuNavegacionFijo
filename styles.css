@@ -1,0 +1,55 @@
+*{
+    margin:0;       /*Eliminamos los margenes y paddings que pone el navegador por defecto*/
+    padding: 0;
+}
+
+p{
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: grey;
+}
+
+header{
+width: 100%;
+position: fixed;  /* Para que el menu se quede fijo en pantalla */
+z-index: 100; /* el menu se mostrara por encima de los elementos como imagenes que se muestren en pantalla*/
+background: rgb(33, 155, 231);
+}
+
+nav{
+float: left; /*desplazamos el nav hacia la izquierda*/
+}
+
+nav ul{
+    list-style: none; /*quitamos el formato predeterminado de ul*/
+    overflow: hidden; /* Limpiamos los errores de float el contenido es recortado y no se muestran las barras 
+                      de posicion*/
+}
+
+nav ul li{
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+nav ul li a{
+    color: #fff;  /* color de letra del menu blanco */
+    display: block; /*convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 20px;  /* padding arriba y a los lados de 20px */
+    text-decoration: none; /* quitamos la decoracion de a */
+}
+
+nav ul li:hover{
+    background: rgb(235, 153, 53); /* Cuando ponemos el mouse sobre a este cambiara de color a naranja */
+}
+
+.contenido{
+    padding-top: 80px;
+}
+
+.wrapper{
+    width: 80%; /* Se ajusta al 80% */
+    overflow: hidden;  /* Oculta el contenido que se desborda (excedente) */
+    margin: auto;
+}
